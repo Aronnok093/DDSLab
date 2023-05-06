@@ -1,0 +1,4 @@
+You must submit the softcopy version of the assignment in this thread by renaming it as follows: FULLID_Offline1.sql
+Ex: 190204001_Offline1.sql
+
+You must also submit a hardcopy version of the assignment in lab 2. I am providing a sample cover and a pattern in which you should prepare the hardcopy of the assignment in Offline Submission Sample Section in the classroom.
