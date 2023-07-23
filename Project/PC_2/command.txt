@@ -1,0 +1,3 @@
+cmd as administrator mode
+lsnrctl stop
+lsnrctl start
