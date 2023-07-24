@@ -21,13 +21,13 @@ BEGIN
             DECLARE
             
             BEGIN
-               insert_alumni_fragment1;
+               insert_alumni_fragment;
             END;
          WHEN 2 THEN
             DECLARE
                
             BEGIN
-				insert_events_fragment1;
+				insert_events_fragment;
             END;
          WHEN 3 THEN
             DECLARE

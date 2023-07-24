@@ -75,7 +75,7 @@ BEGIN
       DBMS_OUTPUT.PUT_LINE('Alumni data inserted successfully.');
    ELSE
       DBMS_OUTPUT.PUT_LINE('->Site 2:');
-	     INSERT INTO alumni_fragment1 @site_link(
+	     INSERT INTO alumni_fragment2 @site_link(
          alumni_id,
          first_name,
          last_name,

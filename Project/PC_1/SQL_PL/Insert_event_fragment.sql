@@ -39,7 +39,7 @@ BEGIN
       DBMS_OUTPUT.PUT_LINE('Event data inserted successfully.');
    ELSE
       DBMS_OUTPUT.PUT_LINE('->Site 2');
-	     INSERT INTO events_fragment1 @site_link(
+	     INSERT INTO events_fragment2 @site_link(
          event_id,
          event_name,
          event_date,
