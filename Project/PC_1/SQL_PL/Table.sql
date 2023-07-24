@@ -1,6 +1,9 @@
 clear screen;
 
 DROP TABLE alumni_fragment1 CASCADE CONSTRAINTS;
+DROP TABLE events_fragment1 CASCADE CONSTRAINTS;
+DROP TABLE job_opportunities1 CASCADE CONSTRAINTS;
+DROP TABLE fund_fragment1 CASCADE CONSTRAINTS;
 CREATE TABLE alumni_fragment1 (
     alumni_id       NUMBER,
     first_name      VARCHAR2(50),
@@ -32,15 +35,13 @@ CREATE TABLE job_opportunities1 (
     job_posting_date   DATE
 );
 
-CREATE TABLE fund_fragment (
-    donation_id       NUMBER,
+CREATE TABLE fund_fragment1 (
+    fund_id           NUMBER,
     alumni_id         NUMBER,
-    donation_amount   NUMBER,
-    donation_date     DATE,
-    donation_purpose  VARCHAR2(200)
+    fund_amount       NUMBER,
+    fund_date         DATE,
+    fund_purpose      VARCHAR2(200)
 );
-
-
 
 -- Insert data 
 INSERT INTO alumni_fragment1 VALUES (101, 'John', 'Doe', 2010, 'john.doe@example.com', '+1234567890', '123 Main St, City', 'Computer Science', 'Software Engineer', 'ABC Corp', 'john.doe.socialmedia');
@@ -60,9 +61,9 @@ INSERT INTO job_opportunities1 VALUES (103, 'Marketing Specialist', 'Join our ma
 
 -- Add more sample data as needed
 
-INSERT INTO fund_fragment VALUES (101, 101, 500, TO_DATE('2023-07-15', 'YYYY-MM-DD'), 'Education Fund');
-INSERT INTO fund_fragment VALUES (102, 102, 1000, TO_DATE('2023-08-20', 'YYYY-MM-DD'), 'Medical Fund');
-INSERT INTO fund_fragment VALUES (103, 103, 250, TO_DATE('2023-09-10', 'YYYY-MM-DD'), 'Charity Fund');
+INSERT INTO fund_fragment1 VALUES (101, 101, 500, TO_DATE('2023-07-15', 'YYYY-MM-DD'), 'Education Fund');
+INSERT INTO fund_fragment1 VALUES (102, 102, 1000, TO_DATE('2023-08-20', 'YYYY-MM-DD'), 'Medical Fund');
+INSERT INTO fund_fragment1 VALUES (103, 103, 250, TO_DATE('2023-09-10', 'YYYY-MM-DD'), 'Charity Fund');
 
 -- Add more sample data as needed
 
