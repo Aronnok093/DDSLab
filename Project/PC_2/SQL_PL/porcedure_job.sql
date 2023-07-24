@@ -8,7 +8,7 @@ CREATE OR REPLACE PROCEDURE insert_job_opportunity(
 ) AS
 BEGIN
    -- Insert data into job_opportunities1 table
-   INSERT INTO job_opportunities1 (
+   INSERT INTO job_opportunities1 @site_link (
       job_id,
       job_title,
       job_description,
@@ -26,7 +26,7 @@ BEGIN
 
    COMMIT;
    DBMS_OUTPUT.PUT_LINE('Job opportunity inserted successfully:Site-1');
-   INSERT INTO job_opportunities2 @site_link (
+   INSERT INTO job_opportunities2  (
       job_id,
       job_title,
       job_description,

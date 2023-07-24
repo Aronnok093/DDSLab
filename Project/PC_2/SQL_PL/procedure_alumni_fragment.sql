@@ -1,7 +1,7 @@
 -- Creating Procedure
 SET SERVEROUTPUT ON; 
 SET VERIFY OFF;
-CREATE OR REPLACE PROCEDURE insert_alumni_fragment1(
+CREATE OR REPLACE PROCEDURE insert_alumni_fragment(
    p_alumni_id NUMBER,
    p_first_name VARCHAR2,
    p_last_name VARCHAR2,
@@ -16,7 +16,7 @@ CREATE OR REPLACE PROCEDURE insert_alumni_fragment1(
 ) AS
 BEGIN
    IF p_graduation_year <= 2015 THEN
-      INSERT INTO alumni_fragment1 (
+      INSERT INTO alumni_fragment1 @site_link (
          alumni_id,
          first_name,
          last_name,
@@ -44,7 +44,7 @@ BEGIN
       COMMIT;
       DBMS_OUTPUT.PUT_LINE('Alumni data inserted successfully. Site 1');
    ELSE
-	  INSERT INTO alumni_fragment2 @site_link (
+	  INSERT INTO alumni_fragment2  (
          alumni_id,
          first_name,
          last_name,

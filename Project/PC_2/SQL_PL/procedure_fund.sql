@@ -7,7 +7,7 @@ CREATE OR REPLACE PROCEDURE insert_fund_fragment(
 ) AS
 BEGIN
    -- Insert data into fund_fragment1 table
-   INSERT INTO fund_fragment1 (
+   INSERT INTO fund_fragment1 @site_link (
       fund_id,
       alumni_id,
       fund_amount,
@@ -24,7 +24,7 @@ BEGIN
    COMMIT;
    DBMS_OUTPUT.PUT_LINE('Fund data inserted successfully:Site:-1');
    
-    INSERT INTO fund_fragment2 @site_link (
+    INSERT INTO fund_fragment2  (
       fund_id,
       alumni_id,
       fund_amount,

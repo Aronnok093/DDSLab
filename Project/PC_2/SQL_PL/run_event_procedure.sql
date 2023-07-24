@@ -9,7 +9,7 @@ DECLARE
    P_event_description VARCHAR2(500) := '&P_event_description';
 BEGIN
    -- Get user input for event data and insert it
-   insert_events_fragment1(
+   insert_events_fragment(
       P_event_id,
       P_event_name,
       P_event_date,
