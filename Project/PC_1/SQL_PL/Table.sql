@@ -4,6 +4,7 @@ DROP TABLE alumni_fragment1 CASCADE CONSTRAINTS;
 DROP TABLE events_fragment1 CASCADE CONSTRAINTS;
 DROP TABLE job_opportunities1 CASCADE CONSTRAINTS;
 DROP TABLE fund_fragment1 CASCADE CONSTRAINTS;
+DROP TABLE alumni_log CASCADE CONSTRAINTS;
 CREATE TABLE alumni_fragment1 (
     alumni_id       NUMBER,
     first_name      VARCHAR2(50),
