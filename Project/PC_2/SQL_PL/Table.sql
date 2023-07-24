@@ -37,13 +37,12 @@ CREATE TABLE job_opportunities2 (
 );
 
 CREATE TABLE fund_fragment2 (
-    donation_id       NUMBER,
+    fund_id           NUMBER,
     alumni_id         NUMBER,
-    donation_amount   NUMBER,
-    donation_date     DATE,
-    donation_purpose  VARCHAR2(200)
+    fund_amount       NUMBER,
+    fund_date         DATE,
+    fund_purpose      VARCHAR2(200)
 );
-
 INSERT INTO alumni_fragment2 VALUES (201, 'Emily', 'Brown', 2016, 'emily.brown@example.com', '+7778889999', '789 Oak St, Village', 'Civil Engineering', 'Civil Engineer', 'CivilTech', 'emily.brown.socialmedia');
 INSERT INTO alumni_fragment2 VALUES (202, 'Daniel', 'Lee', 2017, 'daniel.lee@example.com', '+5556667777', '456 Maple Ave, Town', 'Electrical Engineering', 'Electrical Engineer', 'Electricity Inc', 'daniel.lee.socialmedia');
 INSERT INTO alumni_fragment2 VALUES (203, 'Sophia', 'Wilson', 2019, 'sophia.wilson@example.com', '+2223334444', '123 Pine Rd, City', 'Computer Science', 'Software Developer', 'TechCo', 'sophia.wilson.socialmedia');
