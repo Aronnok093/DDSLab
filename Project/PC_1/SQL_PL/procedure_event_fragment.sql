@@ -1,4 +1,4 @@
-CREATE OR REPLACE PROCEDURE insert_events_fragment1(
+CREATE OR REPLACE PROCEDURE insert_events_fragment(
    p_event_id NUMBER,
    p_event_name VARCHAR2,
    p_event_date DATE,

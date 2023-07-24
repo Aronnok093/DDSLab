@@ -1,7 +1,7 @@
 -- Creating Procedure
 SET SERVEROUTPUT ON; 
 SET VERIFY OFF;
-CREATE OR REPLACE PROCEDURE insert_alumni_fragment1(
+CREATE OR REPLACE PROCEDURE insert_alumni_fragment(
    p_alumni_id NUMBER,
    p_first_name VARCHAR2,
    p_last_name VARCHAR2,

@@ -16,7 +16,7 @@ DECLARE
    P_social_media_handles VARCHAR2(200) := '&p_social_media_handles';
 BEGIN
    -- Get user input for alumni data
-   insert_alumni_fragment1(
+   insert_alumni_fragment(
       P_alumni_id,
       P_first_name,
       P_last_name,
