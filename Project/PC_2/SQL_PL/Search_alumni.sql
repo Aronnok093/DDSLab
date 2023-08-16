@@ -9,12 +9,12 @@ BEGIN
     
     -- Search for alumni by graduation_year in the local alumni_fragment2 table
     FOR alumni_row IN (SELECT * FROM alumni_fragment1@site_link WHERE graduation_year = v_user_graduation_year) LOOP
-        DBMS_OUTPUT.PUT_LINE('Alumni Info (Local Table): ' || alumni_row.alumni_id || ', ' || alumni_row.first_name || ', ' || alumni_row.last_name);
+        DBMS_OUTPUT.PUT_LINE('Alumni Info (Remote Table): ' || alumni_row.alumni_id || ', ' || alumni_row.first_name || ', ' || alumni_row.last_name);
     END LOOP;
 
     -- Search for alumni by graduation_year in the remote alumni_fragment2 table
     FOR alumni_row IN (SELECT * FROM alumni_fragment2 WHERE graduation_year = v_user_graduation_year) LOOP
-        DBMS_OUTPUT.PUT_LINE('Alumni Info (Remote Table): ' || alumni_row.alumni_id || ', ' || alumni_row.first_name || ', ' || alumni_row.last_name);
+        DBMS_OUTPUT.PUT_LINE('Alumni Info (Local Table): ' || alumni_row.alumni_id || ', ' || alumni_row.first_name || ', ' || alumni_row.last_name);
     END LOOP;
     
 EXCEPTION

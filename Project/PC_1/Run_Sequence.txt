@@ -1,0 +1,26 @@
+Before:
+1.Con>> @"C:\Users\kfard\OneDrive\Desktop\PC_1\conn.sql";
+2.table>> @"C:\Users\kfard\OneDrive\Desktop\PC_1\SQL_PL\Table.sql";
+3.pkg_update>> @"C:\Users\kfard\OneDrive\Desktop\PC_1\SQL_PL\Package_update.sql";
+4.por_job>> @"C:\Users\kfard\OneDrive\Desktop\PC_1\SQL_PL\porcedure_job.sql";
+5.por_alumni_fragmet>> @"C:\Users\kfard\OneDrive\Desktop\PC_1\SQL_PL\procedure_alumni_fragment.sql";
+6.por_event_fragment>> @"C:\Users\kfard\OneDrive\Desktop\PC_1\SQL_PL\procedure_event_fragment.sql";
+7.por_fund>> @"C:\Users\kfard\OneDrive\Desktop\PC_1\SQL_PL\procedure_fund.sql";
+8.fun_count_member>> @"C:\Users\kfard\OneDrive\Desktop\PC_1\SQL_PL\function_count_member.sql";
+9.Trigger>> @"C:\Users\kfard\OneDrive\Desktop\PC_1\SQL_PL\Trigger.sql";
+
+After:
+1.Alumni_Data Entry>> @"C:\Users\kfard\OneDrive\Desktop\PC_1\SQL_PL\run_alumni_procedure.sql";
+2.Event Data Entry>> @"C:\Users\kfard\OneDrive\Desktop\PC_1\SQL_PL\run_event_procedure.sql";
+3.Fund Data Entry>> @"C:\Users\kfard\OneDrive\Desktop\PC_1\SQL_PL\run_fund_procedure.sql";
+4.Job Data Entry>> @"C:\Users\kfard\OneDrive\Desktop\PC_1\SQL_PL\run_porcedure_job.sql";
+5.Count Member>> @"C:\Users\kfard\OneDrive\Desktop\PC_1\SQL_PL\function_count_member.sql";
+6.Update Year>> @"C:\Users\kfard\OneDrive\Desktop\PC_1\SQL_PL\run_Package_update_graduation_year.sql";
+7.Local + Remote>> @"C:\Users\kfard\OneDrive\Desktop\PC_1\SQL_PL\view_alumni_data.sql";
+8.Local>> @"C:\Users\kfard\OneDrive\Desktop\PC_1\SQL_PL\Local_Data_Alumni.sql";
+9.Remote>> @"C:\Users\kfard\OneDrive\Desktop\PC_1\SQL_PL\Remote_Data_Alumni.sql";
+10.search alumni>> @"C:\Users\kfard\OneDrive\Desktop\PC_1\SQL_PL\Search_alumni.sql";
+11.show Event Data >> @"C:\Users\kfard\OneDrive\Desktop\PC_1\SQL_PL\Event_Data_Combine.sql";
+12.show Job Data >> @"C:\Users\kfard\OneDrive\Desktop\PC_1\SQL_PL\Job Data.sql";
+13.show Fund Data>> @"C:\Users\kfard\OneDrive\Desktop\PC_1\SQL_PL\fund_data.sql";
+14.fund_mx_min_avg>> @"C:\Users\kfard\OneDrive\Desktop\PC_1\SQL_PL\fund_mx_mn_avg.sql";

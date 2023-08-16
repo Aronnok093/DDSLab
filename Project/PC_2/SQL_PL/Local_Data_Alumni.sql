@@ -4,7 +4,7 @@ DECLARE
    -- Cursor for fetching data from alumni_fragment2
    CURSOR c_alumni_fragment2 IS
       SELECT alumni_id, first_name, last_name, graduation_year
-      FROM alumni_fragment2@site_link ;
+      FROM alumni_fragment2;
 
    -- Variables to hold fetched data
    v_alumni_id NUMBER;
